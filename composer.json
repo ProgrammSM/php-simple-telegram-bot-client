@@ -1,0 +1,22 @@
+{
+    "name": "programmsm/php-simple-telegram-bot-client",
+    "description": "Simple telegram client for bots",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.0",
+        "guzzlehttp/guzzle": "^7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Programmsm\\SimpleTelegramBotClient\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Maksim Sukhomlinov",
+            "email": "programmsm@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
