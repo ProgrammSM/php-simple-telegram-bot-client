@@ -23,6 +23,21 @@ class BotClient
     ) {}
 
     /**
+     * Create example BotClient.
+     *
+     * @param Client $client Guzzle client for send requests
+     * @param string $botToken Token received from BotFather
+     * @param string $apiUrl Url api Telegram
+     */
+    public static function create(
+        Client $client,
+        string $botToken,
+        string $apiUrl = 'https://api.telegram.org/bot',
+    ): self {
+        return new BotClient($client, $botToken, $apiUrl);
+    }
+
+    /**
      * Send text message to selected chat.
      *
      * @param int $chatId Identifier chat
